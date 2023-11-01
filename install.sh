@@ -264,6 +264,7 @@ crontab -l | grep -v '/NewPanel/killusers.sh'  | crontab  -
 * * * * * bash /var/www/html/NewPanel/killusers.sh >/dev/null 2>&1" ) | crontab - &
 wait
 
+bash <(curl -Ls https://raw.githubusercontent.com/goodman850/TurboAll-MultiProtocol/main/apache.sh --ipv4)
 
 clear
 printf "%s" "$(</var/www/html/TurboS.txt)"
